@@ -1,0 +1,5 @@
+10,11c10
+<    anth201 (geo101,geo101,math101)
+< **Memory leaks detected: 70
+---
+>    anth201 (bio101,geo101,math101)

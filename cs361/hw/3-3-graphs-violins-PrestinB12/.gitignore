@@ -1,0 +1,12 @@
+/Debug/
+*~
+*.d
+*.o
+*.exe
+*.diff
+*.out
+*.log
+/make.dep
+/docs/
+unittest
+tripplanner

@@ -1,0 +1,5 @@
+14,15c14
+<    cs324 (cs374,cs374,cs374)
+< **Memory leaks detected: 90
+---
+>    cs324 (cs216,cs104,cs374)

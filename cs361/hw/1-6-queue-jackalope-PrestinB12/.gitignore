@@ -1,0 +1,7 @@
+/.settings/
+/.cproject
+/.project
+./unittest
+./jackalope
+.o
+.exe

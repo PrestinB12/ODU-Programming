@@ -1,0 +1,13 @@
+test:
+  timelimit: 10
+  launch: ./listMajor
+  stderr: false
+dueDate: 09/07/2023
+latePenalties: [10, 20, 100]
+build:
+  command: make
+  weight: 1
+  studentFiles:
+    include: ["readingList.h", "readingList.cpp"]
+  instructorFiles:
+    exclude: ["readingList.h", "readingList.cpp"]

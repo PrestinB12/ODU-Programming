@@ -1,0 +1,7 @@
+/.cproject
+/.project
+/*.stackdump
+/*.exe
+animal
+Tests/*/*.diff
+Tests/*/*.out

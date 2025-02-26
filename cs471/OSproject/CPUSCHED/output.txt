@@ -1,0 +1,27 @@
+Stastics for 
+Number of processes: 513
+Total elapsed time: 15182
+Throughput: 21.232
+CPU utilization: 0.717429
+Average waiting time: 1.16959
+Average turnaround time: 22.4016
+Average response time: 22.4016
+
+Stastics for 
+Number of processes: 513
+Total elapsed time: 15182
+Throughput: 21.232
+CPU utilization: 0.717429
+Average waiting time: 3.15789
+Average turnaround time: 24.3899
+Average response time: 24.3899
+
+Stastics for 
+Number of processes: 513
+Total elapsed time: 15182
+Throughput: 21.232
+CPU utilization: 0.717429
+Average waiting time: 6.04873
+Average turnaround time: 27.2807
+Average response time: 27.2807
+

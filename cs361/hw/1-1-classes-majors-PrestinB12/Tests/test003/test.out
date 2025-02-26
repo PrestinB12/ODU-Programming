@@ -1,0 +1,11 @@
+Semester 1
+   cs101 ()
+   fren101 ()
+   hist499 ()
+Semester 2
+   bio101 (fren101)
+   geo101 (hist499)
+   math101 (cs101)
+Semester 3
+   anth201 (geo101,geo101,math101)
+**Memory leaks detected: 70

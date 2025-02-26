@@ -1,0 +1,14 @@
+test:
+  timelimit: 10
+  launch: "./tripplanner @T/../roads.dat"
+  stderr: false
+dueDate: 12/08/2023
+latePenalties: [10, 20, 100]
+build:
+  command: make
+  weight: 1
+  studentFiles:
+    include: ["itinerary.cpp"]
+    exclude: ["*.o", "tripplanner", "unittest", "*.exe"]
+  instructorFiles:
+    exclude: ["itinerary.cpp"]

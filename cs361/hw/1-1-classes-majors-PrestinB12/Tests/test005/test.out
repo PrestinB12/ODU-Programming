@@ -1,0 +1,41 @@
+Semester 1
+   psci392 ()
+Semester 2
+   mgmt284 (psci392)
+Semester 3
+   eng215 (mgmt284)
+Semester 4
+   eng319 (eng215)
+Semester 5
+   eng101 (eng319)
+Semester 6
+   econ241 (eng101)
+Semester 7
+   cs109 (econ241)
+Semester 8
+   chem287 (cs109)
+Semester 9
+   psyc314 (chem287)
+Semester 10
+   anth201 (psyc314)
+Semester 11
+   geo101 (anth201)
+Semester 12
+   bio101 (geo101)
+Semester 13
+   math101 (bio101)
+Semester 14
+   span103 (math101)
+Semester 15
+   fren103 (span103)
+Semester 16
+   ling101 (fren103)
+Semester 17
+   art222 (ling101)
+Semester 18
+   mus482 (art222)
+Semester 19
+   phil401 (mus482)
+Semester 20
+   soc101 (phil401)
+**Memory leaks detected: 200

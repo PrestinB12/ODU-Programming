@@ -1,0 +1,6 @@
+Enter the text you would like to spellcheck:
+Use the end-of-input character (Ctrl-z in Windows, Ctrl-d
+in Linux or MacOS) when done.
+Found 3 misspelled words:
+Ctrl is misspelled at 86, 89
+cin is misspelled at 21

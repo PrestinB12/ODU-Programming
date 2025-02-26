@@ -1,0 +1,5 @@
+test:
+  launch: ./spellcheck
+  timelimit: 10
+dueDate: 07/14/2023
+latePenalties: [10, 20, 100]

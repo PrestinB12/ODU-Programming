@@ -1,0 +1,8 @@
+/.vscode/
+/.cproject
+/.project
+/*.stackdump
+/*.exe
+robot
+unittest
+*.o

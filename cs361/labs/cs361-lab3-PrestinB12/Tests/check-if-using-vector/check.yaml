@@ -1,0 +1,2 @@
+launch: grep --count 'vector.*data;' median.h 
+weight: 5

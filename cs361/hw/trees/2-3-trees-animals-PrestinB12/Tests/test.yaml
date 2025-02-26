@@ -1,0 +1,14 @@
+test:
+  timelimit: 10
+  launch: /bin/sh
+  params: "@T/../launchAnimal.sh @R/TestCases/@t"
+  stderr: false
+dueDate: 10/24/2023
+latePenalties: [10, 20, 100]
+build:
+  command: make
+  weight: 1
+  studentFiles:
+    include: ["node.cpp"]
+  instructorFiles:
+    exclude: ["node.cpp"]

@@ -1,0 +1,7 @@
+/.cproject
+/.project
+/*.stackdump
+/*.exe
+unittest
+listMajor
+/*.o

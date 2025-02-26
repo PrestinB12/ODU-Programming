@@ -1,0 +1,76 @@
+#include <iostream>
+#include <vector>
+#include <deque>
+#include <algoritrhm>
+
+using namespace std;
+
+void lru(const vector<int>& pageRef, int num_frames) 
+{
+    vector<int> frames(num_frames, -1);
+    deque<int> lruQ;
+
+    int pageFault = 0;
+    int totRef = pageRef.size();
+
+    cout << "Page ref# Frame is: " << endl;
+
+    for (int ref : pageRef) //range based for-loop 
+    {
+        //set up the iterator itr
+        auto itr = find(frames.begin(), frames.end(), ref);
+
+        if (itr != frames.end()) 
+        {
+            lruQ.erase(remove(lruQ.begin(), lruQ.end(), ref), lruQ.end());
+            lruQ.push_back(ref);
+
+            cout << ref << " No Page Fault Has Been Found ";
+            
+            for (int frame : frames) //Range-Based For-loop
+            {
+                cout << "F" << frame << " ";
+            }
+            cout << endl;
+        } 
+        else 
+        {
+            pageFault++;
+            if (lruQ.size() == num_frames) 
+            {
+                int victim = lruQ.front();
+                lruQ.pop_front();
+                *find(frames.begin(), frames.end(), victim) = ref;
+            } 
+            else 
+            {
+                auto emptyFrame = find(frames.begin(), frames.end(), -1);
+                *emptyFrame = ref;
+                lruQ.push_back(ref);
+            }
+            cout << ref << " Page Fault ";
+            for (int frame : frames) //range based for-loop
+            {
+                cout << "F" << frame << " ";
+            }
+            cout << endl;
+        }
+    }
+    // Output statements
+    cout << "Total number of references: " << totRef << endl;
+    cout << "Total number of page faults: " << pageFault << endl;
+}
+
+int main() 
+{
+    // Page refs for the process
+    vector<int> pageRef = {0, 3, 5, 1, 1, 2, 5, 4, 3, 2, 1, 2, 5, 4, 6, 7, 5, 4, 7, 8, 9, 10, 5, 6, 10, 1, 2, 3};
+
+    // Number of frames for to the process
+    int num_frames = 3;
+
+    // Runs LRU algoritrhm
+    lru(pageRef, num_frames);
+
+    return 0;
+}

@@ -1,0 +1,4 @@
+//Java application
+
+rootProject.name = 'semester-project-website-analysis-cs350-tuesday-4'
+include 'project'

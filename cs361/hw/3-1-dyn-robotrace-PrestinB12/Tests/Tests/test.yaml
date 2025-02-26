@@ -1,0 +1,13 @@
+test:
+  timelimit: 30
+  launch: ./robot
+  stderr: false
+dueDate: 11/18/2023
+latePenalties: [10, 20, 100]
+build:
+  command: make
+  weight: 1
+  studentFiles:
+    include: ["race.cpp"]
+  instructorFiles:
+    exclude: ["race.cpp"]

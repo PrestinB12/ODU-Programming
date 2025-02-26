@@ -1,0 +1,26 @@
+---- running ----
+Let's play "Guess the Animal".
+Does it live in the water?
+Does it have webbed feet?
+I know.  Is it a Duck ?
+what is your animal?
+What is a yes/no question that I can use to tell a Duck from a duck billed platypus ?
+For a duck billed platypus is the answer yes or no?
+Try again?
+Does it live in the water?
+Does it have webbed feet?
+I know.  Is it a Fish ?
+what is your animal?
+What is a yes/no question that I can use to tell a Fish from a dolphin ?
+For a dolphin is the answer yes or no?
+Try again?
+---- animal.dat ----
+Q Does it live in the water?
+Q Does it have webbed feet?
+Q Is is a mammal?
+A duck billed platypus
+A Duck
+Q Is is a mammal?
+A dolphin
+A Fish
+A Cat

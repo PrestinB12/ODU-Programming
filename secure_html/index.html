@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+</head>
+<body>
+
+    <header>
+        <h1>Epsilon 3 Backpack</h1>
+    </header>
+
+    <nav>
+        <button class="header-button" id="home" onclick="redirectHome()">Price</button>
+        <button class="header-button" id="gallery" onclick="redirect()">Gallery</button>
+        <button class="header-button" id="contact" onclick="redirect1()">Contact Us</button>
+    </nav>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Color Information</title>
+<style>
+
+  .dropdown select {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .color-info {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+  }
+</style>
+<script>
+  function showColorInfo() {
+    var selectBox = document.getElementById("colorSelect");
+    var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+    var colorInfos = document.getElementsByClassName("color-info");
+
+    // Hide all color information elements
+    for (var i = 0; i < colorInfos.length; i++) {
+      colorInfos[i].style.display = "none";
+    }
+
+    // Show the selected color information
+    var colorInfo = document.getElementById(selectedValue + "Info");
+    if (colorInfo) {
+      colorInfo.style.display = "block";
+    }
+  }
+
+  // Call showColorInfo when the page loads to display the Blue info by default
+  document.addEventListener('DOMContentLoaded', function() {
+      showColorInfo();
+  });
+    
+    // Redirect to home page
+    function redirectHome() {
+      window.location.href = 'price.html';
+    }
+    
+  
+    // Redirect to gallery
+    function redirect() {
+      window.location.href = 'gallery.html';
+    }
+  
+    // Redirect to contact page
+    function redirect1() {
+      window.location.href = 'contact.html';
+    }
+</script>
+</head>
+<body>
+
+<section>
+  <div class="topnav">
+    <input type="text" placeholder="Search..">
+  </div>
+
+  <div class="dropdown">
+    <select id="colorSelect" onchange="showColorInfo()">
+      <option value="Blue">Blue</option>
+      <option value="Pink">Pink</option>
+      <option value="Orange">Orange</option>
+    </select>
+  </div>
+
+  <div id="BlueInfo" class="color-info">
+    <p>Blue: Our personal favorite. The blue LEDs on this bag gives the feeling of being as cool as the color. </p>
+  </div>
+
+  <div id="PinkInfo" class="color-info">
+    <p>Pink: The same feeling as the blue, but for the ladies.</p>
+  </div>
+
+  <div id="OrangeInfo" class="color-info">
+    <p>Orange: This one is more suited for traving the world as a suitcase, camping/hiking, or any vacation of being away from home. Same features as the other two, but more space for longer days.</p>
+  </div>
+
+  <div class="text-box">
+    <p>Introducing the new Epsilon 3 Backpack! This innovative backpack combines style and functionality, offering a sleek design and a range of features to meet your everyday needs. Whether you're a student, professional, or adventurer, the Epsilon 3 Backpack is your perfect companion. Using new LED displays on your backpack, this backpack offers more than just a carrying bag, this bag opens a new ability to allow productivity to the bag itself to complement your busy schedule! Available below in multiple colors of Blue, Pink, and Orange!</p>
+  </div>
+
+  <div class="gallery">
+    <img src="blue.jpg" alt="Blue">
+    <img src="pink.jpg" alt="Pink (for the ladies)">
+    <img src="orange.jpg" alt="Orange">
+
+  </div>
+</section>
+
+</body>
+</html>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var colorSelect = document.getElementById('colorSelect');
+            var blueInfo = document.getElementById('blueInfo');
+            var pinkInfo = document.getElementById('pinkInfo');
+            var orangeInfo = document.getElementById('orangeInfo');
+
+            colorSelect.addEventListener('change', function() {
+                blueInfo.style.display = 'none';
+                pinkInfo.style.display = 'none';
+                orangeInfo.style.display = 'none';
+
+                var selectedColor = colorSelect.value;
+
+                if (selectedColor === 'blue') {
+                    blueInfo.style.display = 'block';
+                } else if (selectedColor === 'pink') {
+                    pinkInfo.style.display = 'block';
+                } else if (selectedColor === 'orange') {
+                    orangeInfo.style.display = 'block';
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epsilon 3 Backpack</title>
+    <style>
+        body {
+            background-color: black;
+            color: rgb(227, 220, 9);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav a, button {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            background-color: #FFD700; 
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .gallery img {
+            width: 200px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        .search-bar {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        select {
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #FFD700; 
+            color: black;
+            cursor: pointer;
+        }
+
+        .text-box {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #FFD700; 
+            border-radius: 5px;
+            background-color: #333;
+            color: #FFD700; 
+        }
+    </style>

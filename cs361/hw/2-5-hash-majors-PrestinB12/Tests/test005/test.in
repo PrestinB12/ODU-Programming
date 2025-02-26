@@ -1,0 +1,20 @@
+math101 bio101 
+bio101 geo101
+geo101 anth201
+anth201 psyc314
+psyc314 chem287
+chem287 cs109
+cs109 econ241
+econ241 eng101
+eng101 eng319
+eng319 eng215 
+eng215 mgmt284
+mgmt284 psci392
+psci392
+span103 math101
+fren103 span103
+ling101 fren103
+art222 ling101
+mus482 art222
+phil401 mus482
+soc101 phil401

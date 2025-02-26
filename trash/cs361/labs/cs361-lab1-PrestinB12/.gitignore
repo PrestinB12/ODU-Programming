@@ -1,0 +1,16 @@
+/dividers
+/unittest
+/.cproject
+/.project
+Tests/*/*.err
+Tests/*/*.diff
+Tests/*/*.out
+Tests/*/*.score
+Tests/*/*.time
+runTests.sh
+make.dep
+/**/*.exe
+/**/*.o
+/**/*.d
+/.settings
+/**/unitTests.date

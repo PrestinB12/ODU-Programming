@@ -1,0 +1,13 @@
+test:
+  timelimit: 10
+  launch: ./jackalope
+  stderr: false
+dueDate: 10/04/2023
+latePenalties: [10, 20, 100]
+build:
+  command: make
+  weight: 1
+  studentFiles:
+    include: ["counting.cpp"]
+  instructorFiles:
+    exclude: ["counting.cpp"]

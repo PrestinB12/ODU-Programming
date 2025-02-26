@@ -1,0 +1,12 @@
+unittest.o: unittest.cpp unittest.h
+course.o: course.cpp course.h courseName.h memoryChecked.h
+testCourse.o: testCourse.cpp course.h courseName.h memoryChecked.h \
+ unittest.h
+catalog.o: catalog.cpp catalog.h course.h courseName.h memoryChecked.h
+memoryChecked.o: memoryChecked.cpp memoryChecked.h
+testCatalog.o: testCatalog.cpp catalog.h course.h courseName.h \
+ memoryChecked.h unittest.h
+sanitycheck.o: sanitycheck.cpp course.h courseName.h memoryChecked.h
+courseName.o: courseName.cpp courseName.h memoryChecked.h
+listMajor.o: listMajor.cpp course.h courseName.h memoryChecked.h \
+ catalog.h

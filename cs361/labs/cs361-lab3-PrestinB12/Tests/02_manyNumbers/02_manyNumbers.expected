@@ -1,0 +1,3 @@
+Enter a series of numbers, spearated by blanks or line breaks.
+Enter ^Z (Windows) or ^D (Linux or MacOS) at the start of a line to end.
+median is 8

@@ -1,0 +1,9 @@
+This is a simple spell checker.
+
+It reads a dictionary of properly spelled words from dictionary.txt, then reads plain text from cin and checks each word in it to see if it matches a word from the dictionary. 
+
+Compile and run the program (the executable name is spellcheck).
+Even through the dictionary is fairly large, it will be ready to accept text from you pretty quickly.   Type what you like, then signal the end of input by 
+using the appropriate key sequence for your operating system: Ctrl-z in Windows, Ctrl-d (at the start of a new line) for most operating systems.
+
+This is not the most sophisticated of spell checkers, but it does ignore upper/lower case differences when comparing words, and it will strip away most punctuation from incoming words as well.

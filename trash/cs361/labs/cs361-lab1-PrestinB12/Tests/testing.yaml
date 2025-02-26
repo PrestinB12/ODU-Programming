@@ -1,0 +1,4 @@
+test:
+  launch: ./dividers
+  timelimit: 1
+  stderr: 1

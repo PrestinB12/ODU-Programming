@@ -1,0 +1,23 @@
+---- running ----
+Let's play "Guess the Animal".
+I know.  Is it a cat ?
+what is your animal?
+What is a yes/no question that I can use to tell a cat from a fish ?
+For a fish is the answer yes or no?
+Try again?
+Does it have fur?
+I know.  Is it a cat ?
+what is your animal?
+What is a yes/no question that I can use to tell a cat from a bear ?
+For a bear is the answer yes or no?
+Try again?
+Does it have fur?
+I know.  Is it a fish ?
+I won.
+Try again?
+---- animal.dat ----
+Q Does it have fur?
+Q Is it larger than a breadbox?
+A bear
+A cat
+A fish

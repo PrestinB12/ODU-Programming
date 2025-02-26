@@ -1,0 +1,5 @@
+test:
+  launch: ./computeMedian
+  timelimit: 10
+dueDate: 06/05/2023
+latePenalties: [10, 20, 100]

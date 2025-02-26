@@ -1,0 +1,18 @@
+---- running ----
+Let's play "Guess the Animal".
+Does it live in the water?
+Does it have webbed feet?
+Is is a mammal?
+I know.  Is it a dolphin ?
+I won.
+Try again?
+---- animal.dat ----
+Q Does it live in the water?
+Q Does it have webbed feet?
+Q Is it a mammal?
+A duck billed platypus
+A Duck
+Q Is is a mammal?
+A dolphin
+A Fish
+A Cat

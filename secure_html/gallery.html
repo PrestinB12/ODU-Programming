@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery</title>
+<style>
+  /* Gallery CSS */
+  body {
+    background-color: black; /* Set the background color to black */
+    color: gold; /* Set the text color to gold */
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+  }
+  .gallery img {
+    width: 100%;
+    height: auto;
+  }
+</style>
+</head>
+<body>
+
+<h2>Gallery</h2>
+
+<div class="gallery">
+  <img src="blue.jpg" alt="Blue">
+  <img src="pink.jpg" alt="Pink (for the ladies)">
+  <img src="orange.jpg" alt="Orange">
+  <!-- Add more images if needed -->
+</div>
+
+</body>
+</html>
+

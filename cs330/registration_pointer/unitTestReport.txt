@@ -1,0 +1,5 @@
+PASSED->testAppendNoCheck
+PASSED->testGetCredits
+PASSED->testWouldExceedCreditLimit
+PASSED->testAlreadyInSchedule
+PASSED->testOutputWithOneCourse

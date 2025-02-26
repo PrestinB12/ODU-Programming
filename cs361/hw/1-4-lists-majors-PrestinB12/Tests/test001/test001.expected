@@ -1,0 +1,14 @@
+Semester 1
+   cs103 ()
+   math241 ()
+Semester 2
+   cs104 (cs103)
+Semester 3
+   cs201 (cs104)
+   cs216 (cs104,math241)
+Semester 4
+   cs351 (cs201)
+   cs374 (cs201)
+   cs381 (cs216)
+Semester 5
+   cs324 (cs104,cs216,cs374)
