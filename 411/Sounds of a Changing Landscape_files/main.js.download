@@ -1,0 +1,33 @@
+import { createApp } from "/node_modules/.vite/deps/vue.js?v=4a7913ed";
+import "/src/style.css";
+import App from "/src/App.vue";
+import router from "/src/router.js";
+import store from "/src/store/index.js";
+
+import "/node_modules/vuetify/lib/styles/main.css";
+import "/node_modules/@mdi/font/css/materialdesignicons.css";
+import { createVuetify } from "/node_modules/.vite/deps/vuetify.js?v=4a7913ed";
+import * as components from "/node_modules/.vite/deps/vuetify_components.js?v=4a7913ed";
+import * as directives from "/node_modules/.vite/deps/vuetify_directives.js?v=4a7913ed";
+import { aliases, mdi } from "/node_modules/.vite/deps/vuetify_iconsets_mdi.js?v=4a7913ed";
+
+const vuetify = createVuetify({
+  components,
+  directives,
+  icons: {
+    defaultSet: 'mdi',
+    aliases,
+    sets: {
+      mdi,
+    }
+  },
+  theme: {
+    defaultTheme: 'light',
+  },
+});
+
+createApp(App)
+  .use(store)
+  .use(vuetify)
+  .use(router)
+  .mount('#app');
