@@ -1,0 +1,114 @@
+//Note: All versions are up to date
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+}
+
+plugins {
+    id "java"
+    id "application"
+
+    id "com.github.spotbugs" version "5.0.14"
+    id "project-report"
+    id "jacoco"
+    id "pmd"
+}
+
+java {
+    sourceCompatibility = JavaVersion.toVersion(11)
+    targetCompatibility = JavaVersion.toVersion(11)
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    //Q: Actual version 5.10.0-M1, include M1?
+    testImplementation "org.junit.jupiter:junit-jupiter:5.10.0"
+    // testImplementation "org.junit.jupiter:junit-jupiter-api:5.10.0"
+    testImplementation "org.hamcrest:hamcrest-library:2.2"
+}
+
+jar {
+    archiveBaseName = "WebAnalysis"
+
+    manifest {
+        attributes(
+            "Main-Class": "WebAnalysis"
+        )
+    }
+}
+
+run {
+    main = "WebAnalysis"
+    //Argument placeholder
+    args = ["arg1", "arg2"]
+}
+
+application {
+    mainClass = "WebAnalysis"
+}
+
+test {
+    useJUnitPlatform()
+    reports {
+        html.enabled = true
+    }
+    ignoreFailures = true
+
+    testLogging {
+        events "passed", "skipped", "failed", "standardOut", "standardError"
+    }
+}
+
+javadoc {
+    failOnError false
+}
+
+
+//------------------------------------------------------------------------------
+// Analysis Tools
+//------------------------------------------------------------------------------
+
+// SpotBugs
+spotbugsMain {
+    ignoreFailures = true
+    effort = "max"
+    reportLevel = "medium"
+    reports {
+       xml.enabled = false
+       html.enabled = true
+    }
+}
+
+spotbugsTest.enabled = false
+// End SpotBugs config
+
+jacoco {
+    toolVersion = "0.8.10"
+}
+
+jacocoTestReport {
+    reports {
+        html.enabled true
+        xml.enabled true
+        csv.enabled true
+    }
+}
+
+pmd {
+    ignoreFailures = true
+    ruleSets = [
+        //Q: How is this accessed?
+        "category/java/bestpractices.xml",
+        "category/java/codestyle.xml",
+        "category/java/design.xml",
+        "category/java/errorprone.xml",
+        "category/java/performance.xml"
+    ]
+}
+
+
