@@ -52,7 +52,7 @@ Courses are labeled by class number and class name
 
 * cs471 ~Operating Systems
     
-    Languages used are `C` and `C++`
+    Languages used are `C` and `C++` and `Python`
 
 
 * Wage Cauluator is a self project using `C++`
