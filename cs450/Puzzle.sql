@@ -1,4 +1,6 @@
-( --Puzzle for leetcode (easy) 
+--Puzzle for leetcode (easy) 
+
+Problem:
 
 Table: Person
 
@@ -61,7 +63,7 @@ Output:
 +-----------+----------+---------------+----------+
 Explanation: 
 There is no address in the address table for the personId = 1 so we return null in their city and state.
-addressId = 1 contains information about the address of personId = 2.)
+addressId = 1 contains information about the address of personId = 2.
 
 Answer:
 
